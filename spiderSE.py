@@ -30,7 +30,7 @@ if(__name__ == "__main__"):
     )
     parser.add_argument(
         '--option', type=str, default="z", choices=["a", "z"],
-        help='Please input url_file path to save. eg: c:\\urls.txt'
+        help='--option a：使用爱站爬虫；--option z：使用站长之家爬虫（默认使用站长之家爬虫）'
     )
     args = parser.parse_args()
     webmaster = webMaster_driver()
